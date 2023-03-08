@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10em;
+    padding: 10em;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    padding: 0 20px;
+}
+
+img {
+    display: block;
+    margin:  0 auto;
+    margin-top: 50px;
+}
