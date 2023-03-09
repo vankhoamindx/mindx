@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox layout example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+        }
+
+        header,
+        footer {
+            background-color: #ccc;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .right-sidebar,
+        .left-sidebar {
+            background-color: #eee;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            padding: 1rem;
+        }
+
+        .content {
+            background-color: #fff;
+            flex-grow: 1;
+            padding: 1rem;
+            font-size: 1.5rem;
+            line-height: 1.5;
+        }
+
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 1rem;
+            font-size: 1.2rem;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>Header</header>
+        <div class="content-wrapper">
+            <aside class="right-sidebar">Right sidebar</aside>
+            <main class="content">
+                <h1>Welcome to my website</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor consectetur justo, in tempor
+                    elit. In hac habitasse platea dictumst. Nulla facilisi. Sed eget pulvinar lorem. Nam lacinia tellus
+                    sit amet eros convallis rutrum. Proin sed sollicitudin est. Etiam vitae convallis quam. Duis et
+                    nulla non sapien bibendum blandit. Sed convallis enim vel erat sagittis, eu luctus est facilisis.
+                    Quisque at eros mauris. Maecenas eu lectus nisi. Cras id lorem faucibus, mollis sapien sit amet,
+                    faucibus felis. Proin eleifend leo in urna iaculis, ac tristique libero molestie. Donec imperdiet,
+                    sapien at varius suscipit, nulla magna porttitor felis, vel volutpat nibh nisi ac sapien. Donec vel
+                    quam ligula.</p>
+            </main>
+            <aside class="left-sidebar">Left sidebar</aside>
+        </div>
+        <footer>Copyright © 2023
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </footer>
+    </div>
+</body>
+
+</html>
